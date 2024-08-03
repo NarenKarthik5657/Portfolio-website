@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+header{
+    background-color: #222831;
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0px;
+    
+    
+}
+header.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+header h1{
+    margin: 0;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+header nav ul li {
+    margin-left: 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.section{
+    padding: 2rem;
+    background-color: #393E46;
+
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    
+}
+.portfolio-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.portfolio-item{
+    flex: 1 1 calc(33.333% - 1rem);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+}
+.Skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.Skills-item{
+    flex: 1 1 calc(33.333% - 1rem);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+}
+
+footer{
+    background-color: rgb(75, 75, 75);
+    color: white;
+    padding: 1rem 0;
+    
+}
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+section.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section nav ul{
+    list-style: none;
+    display: fex;
+}
+section h1{
+    margin: 0;
+}
+section nav ul {
+    list-style: none;
+    display: flex;
+}
+section nav ul li {
+    margin-left: 1rem;
+}
+
+section nav ul li a {
+    color: #180a0a;
+    text-decoration: none;
+}
+section div p{
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+#about.section{
+    background-color: #00ADB5;
+}
+#portfolio-grid.section{
+    background-color: #00ADB5;
+}
+#contact.section{
+    background-color: #00ADB5;
+}
+footer{
+    background-color: rgb(53, 43, 43);
+}
+#contact li{
+    display: flex;
+    flex-direction: row;
+}
+#contact li:hover{
+    transform: scale(1.1);
+  }
+@media (max-width: 768px) {
+    .portfolio-item {
+        flex: 1 1 calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-item {
+        flex: 1 1 100%;
+    }
+
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+}
